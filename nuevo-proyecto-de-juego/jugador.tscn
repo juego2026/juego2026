@@ -219,7 +219,7 @@ position = Vector2(0, -4)
 script = ExtResource("1_7st5j")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1129578063]
-position = Vector2(2, -3)
+position = Vector2(67, 36)
 sprite_frames = SubResource("SpriteFrames_yner3")
 animation = &"Idle"
 autoplay = "Idle"
