@@ -1,5 +1,38 @@
 [gd_scene format=3 uid="uid://k0wuvv43ut3j"]
 
+[ext_resource type="Texture2D" uid="uid://dv8efgsaqi23a" path="res://assets/arboles/autumn_maple.png" id="1_wmrrv"]
+[ext_resource type="Texture2D" uid="uid://uegsisirtavc" path="res://assets/arboles/apple_tree.png" id="2_mgk4d"]
+[ext_resource type="Texture2D" uid="uid://b2yv1ujbgwt4m" path="res://assets/arboles/birch.png" id="3_7uq3y"]
+[ext_resource type="Texture2D" uid="uid://1iiu6b1rnsv1" path="res://assets/arboles/oak.png" id="4_e0cwd"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_gkab4"]
+
 [node name="Escenario" type="Node2D" unique_id=1099258791]
 
 [node name="Suelo" type="Polygon2D" parent="." unique_id=689264920]
+position = Vector2(2, 0)
+color = Color(0.3882353, 0.54509807, 0.28627452, 1)
+texture = SubResource("CanvasTexture_gkab4")
+polygon = PackedVector2Array(0, 6, 1144, 0, 1154, 645, -4, 649)
+
+[node name="Arbol_01" type="Sprite2D" parent="." unique_id=1759737218]
+position = Vector2(820, 62)
+scale = Vector2(1, 1.175)
+texture = ExtResource("1_wmrrv")
+
+[node name="Arbol_02" type="Sprite2D" parent="." unique_id=1647291608]
+position = Vector2(408, 128)
+texture = ExtResource("2_mgk4d")
+
+[node name="Arbol_03" type="Sprite2D" parent="." unique_id=695449574]
+position = Vector2(191, 94)
+texture = ExtResource("3_7uq3y")
+
+[node name="Arbol_04" type="Sprite2D" parent="." unique_id=43901771]
+position = Vector2(888, 427)
+texture = ExtResource("2_mgk4d")
+
+[node name="Arbol_05" type="Sprite2D" parent="." unique_id=401756012]
+position = Vector2(197.5, 323)
+scale = Vector2(1.171875, 1.125)
+texture = ExtResource("4_e0cwd")
