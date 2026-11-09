@@ -1,3 +1,20 @@
 [gd_scene format=3 uid="uid://cmws85f7iod8c"]
 
+[ext_resource type="PackedScene" uid="uid://bwsk4yhwxcd0t" path="res://jugador.tscn" id="1_6ba58"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_rbrhy"]
+distance = -6.0
+
 [node name="mundo" type="Node2D" unique_id=1836927667]
+
+[node name="jugador" parent="." unique_id=1030969414 instance=ExtResource("1_6ba58")]
+position = Vector2(4, -40)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=747215207]
+offset = Vector2(0, -51)
+zoom = Vector2(3, 3)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=191680906]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=588043196]
+shape = SubResource("WorldBoundaryShape2D_rbrhy")
