@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://k0wuvv43ut3j"]
+
+[node name="Escenario" type="Node2D" unique_id=1099258791]
+
+[node name="Suelo" type="Polygon2D" parent="." unique_id=689264920]
