@@ -215,6 +215,7 @@ animations = [{
 size = Vector2(12, 36)
 
 [node name="jugador" type="CharacterBody2D" unique_id=1030969414]
+position = Vector2(0, -4)
 script = ExtResource("1_7st5j")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1129578063]
@@ -222,7 +223,7 @@ position = Vector2(2, -3)
 sprite_frames = SubResource("SpriteFrames_yner3")
 animation = &"Idle"
 autoplay = "Idle"
-frame_progress = 0.7080602
+frame_progress = 0.16258384
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=636087063]
 visible = false
