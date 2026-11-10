@@ -7,32 +7,77 @@
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_gkab4"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b7hpn"]
+size = Vector2(16, 14)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hfuxe"]
+size = Vector2(16, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ygvmj"]
+size = Vector2(14, 9)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4xddy"]
+size = Vector2(16, 9)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1fjv0"]
+size = Vector2(21, 10)
+
 [node name="Escenario" type="Node2D" unique_id=1099258791]
 
 [node name="Suelo" type="Polygon2D" parent="." unique_id=689264920]
-position = Vector2(2, 0)
+position = Vector2(3, 2)
 color = Color(0.3882353, 0.54509807, 0.28627452, 1)
 texture = SubResource("CanvasTexture_gkab4")
 polygon = PackedVector2Array(0, 6, 1144, 0, 1154, 645, -4, 649)
 
-[node name="Arbol_01" type="Sprite2D" parent="." unique_id=1759737218]
-position = Vector2(820, 62)
+[node name="Arbol_01_Fisico" type="StaticBody2D" parent="." unique_id=1273788902]
+
+[node name="Arbol_01" type="Sprite2D" parent="Arbol_01_Fisico" unique_id=1759737218]
+position = Vector2(820, 60)
 scale = Vector2(1, 1.175)
 texture = ExtResource("1_wmrrv")
 
-[node name="Arbol_02" type="Sprite2D" parent="." unique_id=1647291608]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Arbol_01_Fisico" unique_id=42596560]
+position = Vector2(820, 100)
+shape = SubResource("RectangleShape2D_b7hpn")
+
+[node name="Arbol_02_Fisico" type="StaticBody2D" parent="." unique_id=1289018463]
+
+[node name="Arbol_02" type="Sprite2D" parent="Arbol_02_Fisico" unique_id=1647291608]
 position = Vector2(408, 128)
 texture = ExtResource("2_mgk4d")
 
-[node name="Arbol_03" type="Sprite2D" parent="." unique_id=695449574]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Arbol_02_Fisico" unique_id=980069373]
+position = Vector2(408, 163)
+shape = SubResource("RectangleShape2D_hfuxe")
+
+[node name="Arbol_03_Fisico" type="StaticBody2D" parent="." unique_id=408902344]
+
+[node name="Arbol_03" type="Sprite2D" parent="Arbol_03_Fisico" unique_id=695449574]
 position = Vector2(191, 94)
 texture = ExtResource("3_7uq3y")
 
-[node name="Arbol_04" type="Sprite2D" parent="." unique_id=43901771]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Arbol_03_Fisico" unique_id=611351961]
+position = Vector2(190, 129.5)
+shape = SubResource("RectangleShape2D_ygvmj")
+
+[node name="Arbol_04_Fisico" type="StaticBody2D" parent="." unique_id=1551219734]
+
+[node name="Arbol_04" type="Sprite2D" parent="Arbol_04_Fisico" unique_id=43901771]
 position = Vector2(888, 427)
 texture = ExtResource("2_mgk4d")
 
-[node name="Arbol_05" type="Sprite2D" parent="." unique_id=401756012]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Arbol_04_Fisico" unique_id=1923525393]
+position = Vector2(888, 462.5)
+shape = SubResource("RectangleShape2D_4xddy")
+
+[node name="Arbol_05_Fisico" type="StaticBody2D" parent="." unique_id=1401302161]
+
+[node name="Arbol_05" type="Sprite2D" parent="Arbol_05_Fisico" unique_id=401756012]
 position = Vector2(197.5, 323)
 scale = Vector2(1.171875, 1.125)
 texture = ExtResource("4_e0cwd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Arbol_05_Fisico" unique_id=1884878893]
+position = Vector2(197.5, 363)
+shape = SubResource("RectangleShape2D_1fjv0")
