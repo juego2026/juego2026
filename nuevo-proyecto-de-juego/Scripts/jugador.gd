@@ -1,39 +1,34 @@
-
 extends CharacterBody2D
 
+@export var speed: float = 200.0
 
-
-@export var speed = 200
-@export var jump = -300
-
-
-
-var gravity = 980
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
-func _physics_process(delta: float) -> void:
-	# Add the gravity.
-	if not is_on_floor():
-	
-		velocity += get_gravity() * delta
-
-	# mmaneja salto.
-	if Input.is_action_just_pressed("jump") and is_on_floor():
-		velocity.y = jump
-
-	# Devuelve la direcccion del jugador ---> -1, 0, 1
-	var direction := Input.get_axis("move_left", "move_right")
-	
-	# Invertir Sprite
-	if direction <0:
-		animated_sprite_2d.flip_h = true
-	elif direction > 0:
-		animated_sprite_2d.flip_h = false
-	
-	# Agrega movimiento
-	if direction:
-		velocity.x = direction * speed
-	else:
-		velocity.x = move_toward(velocity.x, 0, speed)
-
+func _physics_process(_delta: float) -> void:
+	# Detectar movimiento en ocho direcciones
+	var direction = Input.get_vector(
+		"move_left",
+		"move_right",
+		"move_up",
+        "move_down"
+	)
+	print("Movimiento detectado: ", direction)
+	# Mover al personaje sin gravedad
+	velocity = direction * speed
 	move_and_slide()
+
+	# Orientar el personaje a izquierda o derecha
+	if direction.x < 0:
+		animated_sprite_2d.flip_h = true
+	elif direction.x > 0:
+		animated_sprite_2d.flip_h = false
+
+	# Reproducir animaciones si existen
+	if direction == Vector2.ZERO:
+		if animated_sprite_2d.sprite_frames.has_animation("Idle"):
+			animated_sprite_2d.play("Idle")
+	else:
+		if animated_sprite_2d.sprite_frames.has_animation("Run"):
+			animated_sprite_2d.play("Run")
+		elif animated_sprite_2d.sprite_frames.has_animation("Walk"):
+			animated_sprite_2d.play("Walk")

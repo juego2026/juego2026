@@ -211,21 +211,22 @@ animations = [{
 "speed": 15.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_yner3"]
-size = Vector2(12, 36)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rbrhy"]
+size = Vector2(90, 188)
 
 [node name="jugador" type="CharacterBody2D" unique_id=1030969414]
-position = Vector2(0, -4)
+position = Vector2(-30, -90)
+motion_mode = 1
 script = ExtResource("1_7st5j")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1129578063]
-position = Vector2(67, 36)
+position = Vector2(316, 213)
+scale = Vector2(5.15, 5.425)
 sprite_frames = SubResource("SpriteFrames_yner3")
-animation = &"Idle"
+animation = &"Jump"
 autoplay = "Idle"
-frame_progress = 0.16258384
+frame_progress = 0.7990434
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=636087063]
-visible = false
-position = Vector2(-3, 18)
-shape = SubResource("RectangleShape2D_yner3")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=824809611]
+position = Vector2(298, 337)
+shape = SubResource("RectangleShape2D_rbrhy")
