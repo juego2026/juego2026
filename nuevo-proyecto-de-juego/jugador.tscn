@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bwsk4yhwxcd0t"]
 
+[ext_resource type="Script" path="res://inventario_jugador.gd" id="inventario_jugador"]
 [ext_resource type="Script" uid="uid://cjx5m18fjg7ub" path="res://Scripts/jugador.gd" id="1_7st5j"]
 [ext_resource type="Texture2D" uid="uid://c0ehf24dfcdp0" path="res://FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Fall.png" id="1_ukil5"]
 [ext_resource type="Texture2D" uid="uid://dyvq0gtundsei" path="res://FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Idle.png" id="2_7st5j"]
@@ -230,3 +231,6 @@ frame_progress = 0.7990434
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=824809611]
 position = Vector2(298, 337)
 shape = SubResource("RectangleShape2D_rbrhy")
+
+[node name="InventarioJugador" type="Node" parent="."]
+script = ExtResource("inventario_jugador")
