@@ -6,14 +6,13 @@
 [node name="mundo" type="Node2D" unique_id=1836927667]
 
 [node name="Escenario" parent="." unique_id=1099258791 instance=ExtResource("1_lgngo")]
-position = Vector2(-595, -277)
+position = Vector2(29, 13)
 
 [node name="jugador" parent="." unique_id=1030969414 instance=ExtResource("1_6ba58")]
-position = Vector2(-479, -417)
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=747215207]
-position = Vector2(-20, 49)
-offset = Vector2(0, -6)
+[node name="Camera2D" type="Camera2D" parent="jugador" unique_id=556107706]
+position = Vector2(32, 16)
+zoom = Vector2(4, 4)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=191680906]
 position = Vector2(21, 0)
