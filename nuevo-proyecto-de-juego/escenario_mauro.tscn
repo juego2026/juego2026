@@ -7,6 +7,12 @@
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_gkab4"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yner3"]
+size = Vector2(12.5, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rbrhy"]
+size = Vector2(8, 36)
+
 [node name="Escenario" type="Node2D" unique_id=1099258791]
 
 [node name="Suelo" type="Polygon2D" parent="." unique_id=689264920]
@@ -21,15 +27,33 @@ scale = Vector2(1, 1.175)
 texture = ExtResource("1_wmrrv")
 
 [node name="Arbol_02" type="Sprite2D" parent="." unique_id=1647291608]
-position = Vector2(408, 128)
+position = Vector2(371, 141)
+texture = ExtResource("2_mgk4d")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Arbol_02" unique_id=716952814]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Arbol_02/StaticBody2D" unique_id=391547610]
+position = Vector2(0.25, 29)
+shape = SubResource("RectangleShape2D_yner3")
+
+[node name="Sprite2D" type="Sprite2D" parent="Arbol_02/StaticBody2D" unique_id=1737225371]
 texture = ExtResource("2_mgk4d")
 
 [node name="Arbol_03" type="Sprite2D" parent="." unique_id=695449574]
 position = Vector2(191, 94)
 texture = ExtResource("3_7uq3y")
 
+[node name="StaticBody2D" type="StaticBody2D" parent="Arbol_03" unique_id=2002195046]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Arbol_03/StaticBody2D" unique_id=1937753237]
+position = Vector2(-1, 19)
+shape = SubResource("RectangleShape2D_rbrhy")
+
+[node name="Sprite2D" type="Sprite2D" parent="Arbol_03/StaticBody2D" unique_id=494730581]
+texture = ExtResource("3_7uq3y")
+
 [node name="Arbol_04" type="Sprite2D" parent="." unique_id=43901771]
-position = Vector2(888, 427)
+position = Vector2(886, 412)
 texture = ExtResource("2_mgk4d")
 
 [node name="Arbol_05" type="Sprite2D" parent="." unique_id=401756012]
