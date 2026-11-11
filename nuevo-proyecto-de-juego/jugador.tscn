@@ -1,126 +1,11 @@
 [gd_scene format=3 uid="uid://bwsk4yhwxcd0t"]
 
-[ext_resource type="Script" uid="uid://cjx5m18fjg7ub" path="res://Scripts/jugador.gd" id="1_bpxwk"]
-[ext_resource type="Texture2D" uid="uid://c4vy0j823hnbg" path="res://FreeKnight_v1/Top_Down_Adventure_Pack_v.1.0/Top_Down_Adventure_Pack_v.1.0/Char_Sprites/char_attack_down_anim_strip_6.png" id="2_bpxwk"]
-[ext_resource type="Texture2D" uid="uid://x1vwwglwmo2y" path="res://FreeKnight_v1/Top_Down_Adventure_Pack_v.1.0/Top_Down_Adventure_Pack_v.1.0/Char_Sprites/char_idle_down_anim_strip_6.png" id="2_ukil5"]
-[ext_resource type="Texture2D" uid="uid://r6sgd72u4do0" path="res://FreeKnight_v1/Top_Down_Adventure_Pack_v.1.0/Top_Down_Adventure_Pack_v.1.0/Char_Sprites/char_idle_left_anim_strip_6.png" id="3_7st5j"]
-[ext_resource type="Texture2D" uid="uid://dd5031oam3aq6" path="res://FreeKnight_v1/Top_Down_Adventure_Pack_v.1.0/Top_Down_Adventure_Pack_v.1.0/Char_Sprites/char_run_down_anim_strip_6.png" id="3_cvhml"]
-[ext_resource type="Texture2D" uid="uid://cpnwd3yoq84e4" path="res://FreeKnight_v1/Top_Down_Adventure_Pack_v.1.0/Top_Down_Adventure_Pack_v.1.0/Char_Sprites/char_attack_left_anim_strip_6.png" id="3_e6m2u"]
-[ext_resource type="Texture2D" uid="uid://dhqiej2srir6f" path="res://FreeKnight_v1/Top_Down_Adventure_Pack_v.1.0/Top_Down_Adventure_Pack_v.1.0/Char_Sprites/char_idle_right_anim_strip_6.png" id="4_cvhml"]
-[ext_resource type="Texture2D" uid="uid://lxswg4o36goq" path="res://FreeKnight_v1/Top_Down_Adventure_Pack_v.1.0/Top_Down_Adventure_Pack_v.1.0/Char_Sprites/char_attack_right_anim_strip_6.png" id="4_pn0r8"]
-[ext_resource type="Texture2D" uid="uid://b4sfu6urxpxjx" path="res://FreeKnight_v1/Top_Down_Adventure_Pack_v.1.0/Top_Down_Adventure_Pack_v.1.0/Char_Sprites/char_attack_up_anim_strip_6.png" id="5_75jh1"]
-[ext_resource type="Texture2D" uid="uid://dofxit6p33pa3" path="res://FreeKnight_v1/Top_Down_Adventure_Pack_v.1.0/Top_Down_Adventure_Pack_v.1.0/Char_Sprites/char_idle_up_anim_strip_6.png" id="5_btb33"]
-[ext_resource type="Texture2D" uid="uid://bl1431t36dvky" path="res://FreeKnight_v1/Top_Down_Adventure_Pack_v.1.0/Top_Down_Adventure_Pack_v.1.0/Char_Sprites/char_run_up_anim_strip_6.png" id="6_qw2bf"]
-[ext_resource type="Texture2D" uid="uid://ddisprpsmhmsh" path="res://FreeKnight_v1/Top_Down_Adventure_Pack_v.1.0/Top_Down_Adventure_Pack_v.1.0/Char_Sprites/char_run_left_anim_strip_6.png" id="7_g5h5a"]
-[ext_resource type="Texture2D" uid="uid://dtugakdxfsile" path="res://FreeKnight_v1/Top_Down_Adventure_Pack_v.1.0/Top_Down_Adventure_Pack_v.1.0/Char_Sprites/char_run_right_anim_strip_6.png" id="8_o2m60"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_b3ek0"]
-atlas = ExtResource("2_bpxwk")
-region = Rect2(0, 0, 48, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_d0sfg"]
-atlas = ExtResource("2_bpxwk")
-region = Rect2(48, 0, 48, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_qc26i"]
-atlas = ExtResource("2_bpxwk")
-region = Rect2(96, 0, 48, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_rq0fc"]
-atlas = ExtResource("2_bpxwk")
-region = Rect2(144, 0, 48, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_oanud"]
-atlas = ExtResource("2_bpxwk")
-region = Rect2(192, 0, 48, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_apn0e"]
-atlas = ExtResource("2_bpxwk")
-region = Rect2(240, 0, 48, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5s1h3"]
-atlas = ExtResource("3_e6m2u")
-region = Rect2(0, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_lbm5c"]
-atlas = ExtResource("3_e6m2u")
-region = Rect2(32, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_3s6x5"]
-atlas = ExtResource("3_e6m2u")
-region = Rect2(64, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hqd6k"]
-atlas = ExtResource("3_e6m2u")
-region = Rect2(96, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_b8dge"]
-atlas = ExtResource("3_e6m2u")
-region = Rect2(128, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7pm5x"]
-atlas = ExtResource("3_e6m2u")
-region = Rect2(160, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_n7gi6"]
-atlas = ExtResource("4_pn0r8")
-region = Rect2(0, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_35mgw"]
-atlas = ExtResource("4_pn0r8")
-region = Rect2(32, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_awu2n"]
-atlas = ExtResource("4_pn0r8")
-region = Rect2(64, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1mbtv"]
-atlas = ExtResource("4_pn0r8")
-region = Rect2(96, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_i30ky"]
-atlas = ExtResource("4_pn0r8")
-region = Rect2(128, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_d1m1n"]
-atlas = ExtResource("4_pn0r8")
-region = Rect2(160, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_nm7ap"]
-atlas = ExtResource("5_75jh1")
-region = Rect2(0, 0, 48, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_op3x7"]
-atlas = ExtResource("5_75jh1")
-region = Rect2(48, 0, 48, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ubkib"]
-atlas = ExtResource("5_75jh1")
-region = Rect2(96, 0, 48, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_6n8bd"]
-atlas = ExtResource("5_75jh1")
-region = Rect2(144, 0, 48, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_k4md0"]
-atlas = ExtResource("5_75jh1")
-region = Rect2(192, 0, 48, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_cfcrr"]
-atlas = ExtResource("5_75jh1")
-region = Rect2(240, 0, 48, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7st5j"]
-atlas = ExtResource("2_ukil5")
-region = Rect2(0, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_cvhml"]
-atlas = ExtResource("2_ukil5")
-region = Rect2(16, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_btb33"]
-atlas = ExtResource("2_ukil5")
-region = Rect2(32, 0, 16, 16)
+[ext_resource type="Script" path="res://inventario_jugador.gd" id="inventario_jugador"]
+[ext_resource type="Script" uid="uid://cjx5m18fjg7ub" path="res://Scripts/jugador.gd" id="1_7st5j"]
+[ext_resource type="Texture2D" uid="uid://c0ehf24dfcdp0" path="res://FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Fall.png" id="1_ukil5"]
+[ext_resource type="Texture2D" uid="uid://dyvq0gtundsei" path="res://FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Idle.png" id="2_7st5j"]
+[ext_resource type="Texture2D" uid="uid://cgmm56vbs5j12" path="res://FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Jump.png" id="3_cvhml"]
+[ext_resource type="Texture2D" uid="uid://cwrxp1ysh341l" path="res://FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Run.png" id="4_btb33"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qw2bf"]
 atlas = ExtResource("2_ukil5")
@@ -599,13 +484,8 @@ animation = &"attack_down"
 autoplay = "idle_down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=824809611]
-position = Vector2(41, 27)
-shape = SubResource("RectangleShape2D_hcpjn")
+position = Vector2(298, 337)
+shape = SubResource("RectangleShape2D_rbrhy")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=1434989042]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2111952836]
-position = Vector2(47, 26)
-shape = SubResource("RectangleShape2D_yner3")
-
-[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[node name="InventarioJugador" type="Node" parent="."]
+script = ExtResource("inventario_jugador")
