@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://d3b0w23d1cefh"]
+
+[ext_resource type="Texture2D" uid="uid://dv8efgsaqi23a" path="res://assets/arboles/autumn_maple.png" id="1_2js1r"]
+[ext_resource type="Script" uid="uid://dhfch63oc8hvw" path="res://Scripts/arbol.gd" id="1_io3sf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b7hpn"]
+size = Vector2(10, 12)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_b7hpn"]
+radius = 30.0
+
+[node name="Arbol_Arce" type="StaticBody2D" unique_id=2024484785]
+script = ExtResource("1_io3sf")
+
+[node name="Arbol_01" type="Sprite2D" parent="." unique_id=381418439]
+position = Vector2(820, 60)
+scale = Vector2(1, 1.175)
+texture = ExtResource("1_2js1r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=852108493]
+position = Vector2(820, 100)
+shape = SubResource("RectangleShape2D_b7hpn")
+
+[node name="ZonaTala" type="Area2D" parent="." unique_id=706783303]
+position = Vector2(1, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ZonaTala" unique_id=429399419]
+position = Vector2(819, 100)
+shape = SubResource("CircleShape2D_b7hpn")
+
+[connection signal="body_entered" from="ZonaTala" to="." method="_on_zona_tala_body_entered"]
+[connection signal="body_exited" from="ZonaTala" to="." method="_on_zona_tala_body_exited"]

@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://3ibn0b34wmek"]
+
+[ext_resource type="PackedScene" uid="uid://d3b0w23d1cefh" path="res://escenas/arbol_arce.tscn" id="1_d1l47"]
+
+[node name="PrubaTala" type="Node2D" unique_id=218817608]
+
+[node name="Arbol_Arce" parent="." unique_id=2024484785 instance=ExtResource("1_d1l47")]
+position = Vector2(176, 342)

@@ -1,14 +1,11 @@
 [gd_scene format=3 uid="uid://k0wuvv43ut3j"]
 
-[ext_resource type="Texture2D" uid="uid://dv8efgsaqi23a" path="res://assets/arboles/autumn_maple.png" id="1_wmrrv"]
+[ext_resource type="PackedScene" uid="uid://d3b0w23d1cefh" path="res://escenas/arbol_arce.tscn" id="1_wmrrv"]
 [ext_resource type="Texture2D" uid="uid://uegsisirtavc" path="res://assets/arboles/apple_tree.png" id="2_mgk4d"]
 [ext_resource type="Texture2D" uid="uid://b2yv1ujbgwt4m" path="res://assets/arboles/birch.png" id="3_7uq3y"]
 [ext_resource type="Texture2D" uid="uid://1iiu6b1rnsv1" path="res://assets/arboles/oak.png" id="4_e0cwd"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_gkab4"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_b7hpn"]
-size = Vector2(10, 12)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hfuxe"]
 size = Vector2(10, 8)
@@ -25,21 +22,12 @@ size = Vector2(11, 8)
 [node name="Escenario" type="Node2D" unique_id=1099258791]
 
 [node name="Suelo" type="Polygon2D" parent="." unique_id=689264920]
-position = Vector2(24, 82)
+position = Vector2(-1, 4)
 color = Color(0.3882353, 0.54509807, 0.28627452, 1)
 texture = SubResource("CanvasTexture_gkab4")
 polygon = PackedVector2Array(0, 6, 1144, 0, 1154, 645, -4, 649)
 
-[node name="Arbol_01_Fisico" type="StaticBody2D" parent="." unique_id=1273788902]
-
-[node name="Arbol_01" type="Sprite2D" parent="Arbol_01_Fisico" unique_id=1759737218]
-position = Vector2(820, 60)
-scale = Vector2(1, 1.175)
-texture = ExtResource("1_wmrrv")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Arbol_01_Fisico" unique_id=42596560]
-position = Vector2(820, 100)
-shape = SubResource("RectangleShape2D_b7hpn")
+[node name="Arbol_01_Fisico" parent="." unique_id=2024484785 instance=ExtResource("1_wmrrv")]
 
 [node name="Arbol_02_Fisico" type="StaticBody2D" parent="." unique_id=1289018463]
 
