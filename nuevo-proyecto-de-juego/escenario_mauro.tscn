@@ -8,24 +8,24 @@
 [sub_resource type="CanvasTexture" id="CanvasTexture_gkab4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b7hpn"]
-size = Vector2(16, 14)
+size = Vector2(10, 9)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hfuxe"]
-size = Vector2(16, 10)
+size = Vector2(10, 8)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ygvmj"]
-size = Vector2(14, 9)
+size = Vector2(8, 8)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4xddy"]
-size = Vector2(16, 9)
+size = Vector2(10, 9.75)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1fjv0"]
-size = Vector2(21, 10)
+size = Vector2(11, 10)
 
 [node name="Escenario" type="Node2D" unique_id=1099258791]
 
 [node name="Suelo" type="Polygon2D" parent="." unique_id=689264920]
-position = Vector2(3, 2)
+position = Vector2(6, 0)
 color = Color(0.3882353, 0.54509807, 0.28627452, 1)
 texture = SubResource("CanvasTexture_gkab4")
 polygon = PackedVector2Array(0, 6, 1144, 0, 1154, 645, -4, 649)
@@ -38,7 +38,7 @@ scale = Vector2(1, 1.175)
 texture = ExtResource("1_wmrrv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Arbol_01_Fisico" unique_id=42596560]
-position = Vector2(820, 100)
+position = Vector2(820, 101.5)
 shape = SubResource("RectangleShape2D_b7hpn")
 
 [node name="Arbol_02_Fisico" type="StaticBody2D" parent="." unique_id=1289018463]
@@ -58,7 +58,7 @@ position = Vector2(191, 94)
 texture = ExtResource("3_7uq3y")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Arbol_03_Fisico" unique_id=611351961]
-position = Vector2(190, 129.5)
+position = Vector2(190, 129)
 shape = SubResource("RectangleShape2D_ygvmj")
 
 [node name="Arbol_04_Fisico" type="StaticBody2D" parent="." unique_id=1551219734]
@@ -68,7 +68,7 @@ position = Vector2(888, 427)
 texture = ExtResource("2_mgk4d")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Arbol_04_Fisico" unique_id=1923525393]
-position = Vector2(888, 462.5)
+position = Vector2(888, 462.125)
 shape = SubResource("RectangleShape2D_4xddy")
 
 [node name="Arbol_05_Fisico" type="StaticBody2D" parent="." unique_id=1401302161]
